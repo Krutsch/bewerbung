@@ -1,0 +1,27 @@
+{
+  "name": "bewerbung",
+  "version": "1.0.0",
+  "description": "Fabian Krutsch - Bewerbung",
+  "private": true,
+  "scripts": {
+    "lint": "eslint src --fix",
+    "pack": "rollup -c --compact",
+    "build": "npm run lint && npm run pack",
+    "serve": "node server.js",
+    "serve:dev": "node server.js --dev",
+    "start": "npm run build && npm run serve"
+  },
+  "author": "Fabian Krutsch",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "brotli": "^1.3.2",
+    "eslint": "^5.16.0",
+    "rollup": "^1.27.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-gzip": "^2.2.0"
+  },
+  "dependencies": {
+    "babel-preset-minify": "^0.5.1"
+  }
+}
