@@ -1,13 +1,11 @@
-name: Audit
-
-on: [push]
+name: Audit pull request
+on: [pull_request]
 
 jobs:
-  build:
-
+  audit:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Lighthouse Audit
-      uses: jakejarvis/lighthouse-action@v0.3.2
-
+    - name: Audit Netlify Deploy Preview
+      uses: jakejarvis/lighthouse-action@master
+      with:
+        netlify_site: 'https://deploy-preview-${{ github.event.number }}--krutsch.netlify.com/'
