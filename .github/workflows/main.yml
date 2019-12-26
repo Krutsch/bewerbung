@@ -1,4 +1,4 @@
-name: Audit pull request
+name: Lighthouse Preview
 on: [pull_request]
 
 jobs:
@@ -8,4 +8,4 @@ jobs:
     - name: Audit Netlify Deploy Preview
       uses: jakejarvis/lighthouse-action@master
       with:
-        netlify_site: 'https://deploy-preview-${{ github.event.number }}--krutsch.netlify.com/'
+        netlify_site: ''
