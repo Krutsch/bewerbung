@@ -8,4 +8,4 @@ jobs:
     - name: Audit Netlify Deploy Preview
       uses: jakejarvis/lighthouse-action@master
       with:
-        netlify_site: ''
+        netlify_site: 'krutsch.works'
