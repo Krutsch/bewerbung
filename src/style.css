@@ -1,303 +1,312 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 :root {
-    --color: #c4cdff;
-    --color2: #8ac3ff;
-    --color3: #1b2133;
-    --hr: #ddd;
-    --bg: #f2f2f2;
-    --font: #333;
-    --footer: #2f2f2f;
-    --footer2: #3f3f3f;
+  --color: #c4cdff;
+  --color2: #8ac3ff;
+  --color3: #1b2133;
+  --hr: #ddd;
+  --bg: #f2f2f2;
+  --font: #333;
+  --footer: #2f2f2f;
+  --footer2: #3f3f3f;
 }
 
 html {
-    background: linear-gradient(to bottom, var(--color) 0, var(--color2) 100%);
-    scrollbar-color: var(--font) var(--bg);
-    scrollbar-width: thin;
+  background: linear-gradient(to bottom, var(--color) 0, var(--color2) 100%);
+  scrollbar-color: var(--font) var(--bg);
+  scrollbar-width: thin;
 }
 
 body {
-    font-family: lato, ubuntu, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
-    font-weight: lighter;
-    color: var(--font);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background: var(--bg);
-    transition: transform 0.4s ease;
-    overflow-x: hidden;
-    border-radius: 0 0 1em 1em;
+  font-family: lato, ubuntu, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  font-weight: lighter;
+  color: var(--font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--bg);
+  transition: transform 0.4s ease;
+  overflow-x: hidden;
+  border-radius: 0 0 1em 1em;
 }
 
 ::-webkit-scrollbar {
-    background: var(--bg);
-    width: 0.5em;
+  background: var(--bg);
+  width: 0.5em;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--font);
+  background: var(--font);
 }
 
 a {
-    color: var(--font);
+  color: var(--font);
 }
 
 ul {
-    padding: 0 1em;
+  padding: 0 1em;
 }
 
 li {
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
 .wrapper {
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 2em;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 2em;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
-
 .container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 4vmin;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4vmin;
 }
 
 .box {
-    width: 33vmin;
-    height: 33vmin;
-    position: relative;
-    margin: 5vmin;
+  width: 33vmin;
+  height: 33vmin;
+  position: relative;
+  margin: 5vmin;
 }
 
 .spin-container {
-    height: 100%;
-    animation: spin 12s linear infinite;
-    will-change: transform;
+  height: 100%;
+  animation: spin 12s linear infinite;
+  will-change: transform;
 }
 
 .shape {
-    width: 100%;
-    height: 100%;
-    animation: morph 8s ease-in-out infinite both alternate;
-    position: absolute;
-    overflow: hidden;
-    z-index: 1;
-    will-change: border;
+  width: 100%;
+  height: 100%;
+  animation: morph 8s ease-in-out infinite both alternate;
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+  will-change: border;
 }
 
 .bd {
-    width: 120%;
-    height: 120%;
-    position: absolute;
-    left: -10%;
-    top: -10%;
-    background: url(bewerbung_small.webp) 110% 30%;
-    background-size: 97%;
-    animation: spin 12s linear infinite reverse;
-    will-change: transform;
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  left: -10%;
+  top: -10%;
+  background: url(bewerbung.webp) 110% 30%;
+  background-size: 97%;
+  animation: spin 12s linear infinite reverse;
+  will-change: transform;
 }
 
 /* Safari */
-@media not all and (min-resolution: .001dpcm) {
-    @media {
-        .bd {
-            background: url(bewerbung.jpg) 110% 30%;
-            background-size: 97%;
-        }
-    }
+@media not all and (min-resolution: 0.001dpcm) {
+  .bd {
+    background: url(bewerbung.jpg) 110% 30%;
+    background-size: 97%;
+  }
 }
 
 .name {
-    font-size: 4rem;
-    margin-bottom: 2vmax;
-    line-height: 0.8em;
+  font-size: 4rem;
+  margin-bottom: 2vmax;
+  line-height: 0.8em;
 }
 
 .section {
-    margin-top: 3rem;
-    margin-bottom: 0.4em;
+  margin-top: 3rem;
+  margin-bottom: 0.4em;
 }
 
 .section + .section {
-    position: relative;
-    border-top: 1px solid transparent;
+  position: relative;
+  border-top: 1px solid transparent;
 }
 
 .section + .section::before {
-    content: "";
-    font-size: 8vw;
-    position: absolute;
-    border-top: 0.153em solid;
-    width: 4rem;
-    z-index: 1;
+  content: "";
+  font-size: 8vw;
+  position: absolute;
+  border-top: 0.153em solid;
+  width: 4rem;
+  z-index: 1;
 }
 
 .section + .section::after {
-    content: "";
-    position: absolute;
-    background-image: linear-gradient(to right, transparent, var(--hr), transparent);
-    height: 2px;
-    left: 0;
-    right: 0;
-    top: 3px
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    var(--hr),
+    transparent
+  );
+  height: 2px;
+  left: 0;
+  right: 0;
+  top: 3px;
 }
 
 .section-title,
 .section-content {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .section-content {
-    font-size: 1.1em;
-    padding-left: 2rem;
-    color: var(--color3);
+  font-size: 1.1em;
+  padding-left: 2rem;
+  color: var(--color3);
 }
 
 h3 ~ ul {
-    padding-left: 2rem;
+  padding-left: 2rem;
 }
 
 .link {
-    display: inline;
-    background-image: linear-gradient(to bottom, var(--color) 0, var(--color2) 100%);
-    background-position: 0 100%;
-    background-repeat: repeat-x;
-    background-size: 2px 2px;
-    text-decoration: none;
+  display: inline;
+  background-image: linear-gradient(
+    to bottom,
+    var(--color) 0,
+    var(--color2) 100%
+  );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 2px 2px;
+  text-decoration: none;
 }
 
 .link:hover {
-    background-image: linear-gradient(to bottom, var(--color) 0, var(--color2) 100%);
+  background-image: linear-gradient(
+    to bottom,
+    var(--color) 0,
+    var(--color2) 100%
+  );
 }
 
 .tag {
-    font-size: 90%;
-    padding: .1rem .3rem .2rem;
-    border-radius: .2rem;
-    background: linear-gradient(to right, var(--color), var(--color2));
-    font-weight: normal;
+  font-size: 90%;
+  padding: 0.1rem 0.3rem 0.2rem;
+  border-radius: 0.2rem;
+  background: linear-gradient(to right, var(--color), var(--color2));
+  font-weight: normal;
 }
 
 .zoom {
-    transform: perspective(1px) scale(0.95);
-    perspective: 1px;
+  transform: perspective(1px) scale(0.95);
+  perspective: 1px;
 }
 
 .zoom .footer {
-    opacity: 1;
-    transition: opacity 0.6s;
+  opacity: 1;
+  transition: opacity 0.6s;
 }
 
 .material-icons {
-    font-family: 'Material Icons', sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;
-    line-height: 1;
-    letter-spacing: normal;
-    text-transform: none;
-    display: inline-block;
-    white-space: nowrap;
-    word-wrap: normal;
-    direction: ltr;
-    -moz-font-feature-settings: 'liga';
-    -moz-osx-font-smoothing: grayscale;
+  font-family: "Material Icons", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .footer {
-    background: var(--footer);
-    margin-top: 5vmin;
-    border-radius: 0 0 0.5em 0.5em;
-    color: var(--hr);
-    font-size: 1.5em;
-    padding: 0.5em;
-    opacity: 0;
+  background: var(--footer);
+  margin-top: 5vmin;
+  border-radius: 0 0 0.5em 0.5em;
+  color: var(--hr);
+  font-size: 1.5em;
+  padding: 0.5em;
+  opacity: 0;
 }
 
 .footer p {
-    margin: 0.75em;
+  margin: 0.75em;
 }
 
 .footer a {
-    color: var(--color2);
+  color: var(--color2);
 }
 
 .footer i + * {
-    margin-left: 2.7em;
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
+  margin-left: 2.7em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 .material-icons {
-    position: relative;
-    top: 5px;
-    padding: 0.3em;
-    background: var(--footer2);
-    border-radius: 50%;
-    margin-right: -1.77em;
+  position: relative;
+  top: 5px;
+  padding: 0.3em;
+  background: var(--footer2);
+  border-radius: 50%;
+  margin-right: -1.77em;
 }
 
-
 .traits {
-    max-width: 80%;
+  max-width: 80%;
 }
 
 @keyframes morph {
-    0% {
-        border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;
-    }
-    100% {
-        border-radius: 40% 60%;
-    }
+  0% {
+    border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;
+  }
+  100% {
+    border-radius: 40% 60%;
+  }
 }
 
 @keyframes spin {
-    to {
-        transform: rotate(1turn);
-    }
+  to {
+    transform: rotate(1turn);
+  }
 }
 
 @media (max-width: 525px) {
-    .section + .section:before {
-        font-size: 42px;
-    }
+  .section + .section:before {
+    font-size: 42px;
+  }
 }
 
 @media (min-width: 938px) {
-    .section + .section:before {
-        font-size: 75px;
-    }
+  .section + .section:before {
+    font-size: 75px;
+  }
 }
 
 @media (min-width: 1050px) {
-    .wrapper {
-        width: 55%;
-    }
+  .wrapper {
+    width: 55%;
+  }
 
-    .section {
-        display: flex;
-    }
+  .section {
+    display: flex;
+  }
 
-    .section:before {
-        display: none;
-    }
+  .section:before {
+    display: none;
+  }
 
-    .section-title {
-        flex: 0 0 24%;
-    }
+  .section-title {
+    flex: 0 0 24%;
+  }
 
-    .section-content {
-        margin-top: 2.3rem;
-    }
+  .section-content {
+    margin-top: 2.3rem;
+  }
 }
