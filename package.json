@@ -14,7 +14,7 @@
     "@babel/core": "7.8.3",
     "babel-preset-minify": "0.5.1",
     "eslint": "6.8.0",
-    "eslint-config-prettier": "6.9.0",
+    "eslint-config-prettier": "6.10.0",
     "eslint-plugin-prettier": "3.1.2",
     "prettier": "1.19.1",
     "rollup": "1.30.1",
