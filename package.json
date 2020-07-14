@@ -11,7 +11,7 @@
   "author": "Fabian Krutsch",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "7.10.4",
+    "@babel/core": "7.10.5",
     "babel-preset-minify": "0.5.1",
     "eslint": "7.4.0",
     "eslint-config-prettier": "6.11.0",
