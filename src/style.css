@@ -38,6 +38,7 @@ html {
   background: linear-gradient(to bottom, var(--color) 0, var(--color2) 100%);
   scrollbar-color: var(--font) var(--bg);
   scrollbar-width: thin;
+  overflow-y: scroll;
 }
 
 body {
