@@ -5,4 +5,5 @@ document
     '<link rel="stylesheet" href="ie.css" type="text/css" />'
   );
 
+//@ts-ignore
 window.cssVars();

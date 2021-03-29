@@ -1,24 +1,24 @@
 @font-face {
-    font-family: "Material Icons";
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(materialicons..woff) format("woff");
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(materialicons..woff) format("woff");
 }
 
 .bd {
-    background: url(bewerbung.jpg);
-    background-size: 100%;
+  background: url(bewerbung.jpg);
+  background-size: 100%;
 }
 
 .name {
-    margin-bottom: 4vmin;
+  margin-bottom: 4vmin;
 }
 
 main {
-    display: block;
+  display: block;
 }
 
 .material-icons {
-    font-feature-settings: "liga";
+  font-feature-settings: "liga";
 }
