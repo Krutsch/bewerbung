@@ -28,7 +28,7 @@ function iconHandler(files) {
   files.forEach((file) => {
     sharp(file)
       .png({
-        quality: 60,
+        quality: 80,
       })
       .toFile(toBuildFile(file))
       .catch((err) => {
