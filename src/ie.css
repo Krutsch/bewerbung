@@ -3,7 +3,11 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(materialicons..woff) format("woff");
+  src: url(materialicons.woff) format("woff");
+}
+
+.material-icons {
+  font-feature-settings: "liga";
 }
 
 .bd {
@@ -17,8 +21,4 @@
 
 main {
   display: block;
-}
-
-.material-icons {
-  font-feature-settings: "liga";
 }

@@ -249,7 +249,7 @@ h3 ~ ul {
 }
 
 .material-icons {
-  font-family: "Material Icons", sans-serif;
+  font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
@@ -260,6 +260,7 @@ h3 ~ ul {
   white-space: nowrap;
   word-wrap: normal;
   direction: ltr;
+  -moz-font-feature-settings: "liga";
   -moz-osx-font-smoothing: grayscale;
 
   position: relative;
