@@ -1,4 +1,4 @@
-import { mkdirSync, copyFileSync, rmSync } from "fs";
+import fs from "fs";
 import glob from "glob";
 import sharp from "sharp";
 
@@ -6,7 +6,7 @@ const SOURCE_FOLDER = "src";
 const BUILD_FOLDER = "build";
 
 // Remove old build folder
-rmSync(BUILD_FOLDER, { recursive: true, force: true });
+fs.rmSync(BUILD_FOLDER, { recursive: true, force: true });
 
 glob("src/**/*.!(js|ts|html|css)", {}, (err, files) => {
   if (err) throw err;
@@ -67,8 +67,8 @@ function copyFile(file) {
   const buildFile = toBuildFile(file);
   const dir = buildFile.split("/").slice(0, -1).join("/");
 
-  mkdirSync(dir, { recursive: true });
-  copyFileSync(file, buildFile);
+  fs.mkdirSync(dir, { recursive: true });
+  fs.copyFileSync(file, buildFile);
 }
 
 function toBuildFile(file) {
