@@ -14,7 +14,7 @@
   "license": "MIT",
   "devDependencies": {
     "glob": "^7.1.6",
-    "html-bundle": "^5.4.4",
+    "html-bundle": "^5.4.5",
     "sharp": "^0.28.1"
   }
 }
