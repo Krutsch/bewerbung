@@ -8,13 +8,14 @@
     "dev": "html-bundle --hmr --secure",
     "prebuild": "node utils/build.js",
     "build": "html-bundle",
-    "serve": "html-bundle --serveOnly --secure"
+    "serve": "html-bundle --serveOnly --secure",
+    "update": "npx npm-check-updates -u && npm i && npm outdated"
   },
   "author": "Fabian Krutsch",
   "license": "MIT",
   "devDependencies": {
     "glob": "^7.1.6",
-    "html-bundle": "^5.4.5",
+    "html-bundle": "^5.4.8",
     "sharp": "^0.28.1"
   }
 }
