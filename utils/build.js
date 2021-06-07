@@ -11,8 +11,7 @@ fs.rmSync(BUILD_FOLDER, { recursive: true, force: true });
 glob("src/**/*.!(js|ts|html|css)", {}, (err, files) => {
   if (err) throw err;
 
-  copyFiles(["src/_redirects"]);
-  copyFiles(files.filter((f) => /\.woff/.test(f) || f === "_redirects"));
+  copyFiles(files.filter((f) => /\.woff/.test(f)));
   iconHandler(files.filter((f) => f.endsWith(".png")));
   jpegHandler(files.filter((f) => f.endsWith(".jpg")));
   webpHandler(files.filter((f) => f.endsWith(".webp")));
