@@ -8,11 +8,12 @@ const BUILD_FOLDER = "build";
 // Remove old build folder
 fs.rmSync(BUILD_FOLDER, { recursive: true, force: true });
 
+copyFiles(["src/_headers"]);
 glob("src/**/*.!(js|ts|html|css)", {}, (err, files) => {
   if (err) throw err;
 
-  copyFiles(files.filter((f) => /\.woff/.test(f)));
-  iconHandler(files.filter((f) => f.endsWith(".png")));
+  copyFiles(files.filter((f) => /\.(woff|txt)/.test(f)));
+  copyFiles(files.filter((f) => f.endsWith(".png")));
   jpegHandler(files.filter((f) => f.endsWith(".jpg")));
   webpHandler(files.filter((f) => f.endsWith(".webp")));
 

@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "html-bundle --hmr --secure",
-    "prebuild": "node utils/build.js",
+    "prebuild": "node utils/prebuild.js",
     "build": "html-bundle",
     "serve": "html-bundle --serveOnly --secure",
     "update": "npx npm-check-updates -u && npm i && npm outdated"
