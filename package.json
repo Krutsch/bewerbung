@@ -5,6 +5,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "predev": "node utils/prebuild.js",
     "dev": "html-bundle --hmr --secure",
     "prebuild": "node utils/prebuild.js",
     "build": "html-bundle",

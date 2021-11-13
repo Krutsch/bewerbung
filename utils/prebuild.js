@@ -12,8 +12,7 @@ copyFiles(["src/_headers"]);
 glob("src/**/*.!(js|ts|html|css)", {}, (err, files) => {
   if (err) throw err;
 
-  copyFiles(files.filter((f) => /\.(woff|txt)/.test(f)));
-  copyFiles(files.filter((f) => f.endsWith(".png")));
+  copyFiles(files.filter((f) => /\.(woff|txt|ico)/.test(f)));
   jpegHandler(files.filter((f) => f.endsWith(".jpg")));
   webpHandler(files.filter((f) => f.endsWith(".webp")));
 
@@ -22,19 +21,6 @@ glob("src/**/*.!(js|ts|html|css)", {}, (err, files) => {
 
 function copyFiles(files) {
   files.forEach(copyFile);
-}
-
-function iconHandler(files) {
-  files.forEach((file) => {
-    sharp(file)
-      .png({
-        quality: 80,
-      })
-      .toFile(toBuildFile(file))
-      .catch((err) => {
-        console.error(err);
-      });
-  });
 }
 
 function jpegHandler(files) {

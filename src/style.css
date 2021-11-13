@@ -301,6 +301,9 @@ h3 ~ ul {
 .traits {
   max-width: 80%;
 }
+.font-normal {
+  font-weight: normal;
+}
 
 @keyframes morph {
   0% {
