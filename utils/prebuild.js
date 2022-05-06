@@ -5,7 +5,11 @@ const SOURCE_FOLDER = "src";
 const BUILD_FOLDER = "build";
 const file = process.argv[2];
 
-if (file === "src/_headers" || /\.(woff|txt|ico)/.test(file)) {
+if (
+  file === `${SOURCE_FOLDER}/_headers` ||
+  /\.(woff|txt|ico)/.test(file) ||
+  file === `${SOURCE_FOLDER}/netlify.toml`
+) {
   copyFile(file);
 } else if (file.endsWith(".jpg")) {
   sharp(file)
