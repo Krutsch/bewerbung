@@ -2,6 +2,5 @@
   from = "/"
   to = "/de/"
   status = 301
-  force = false
-  query = {path = ":path"}
+  force = true
   conditions = {Language = ["de"]}
