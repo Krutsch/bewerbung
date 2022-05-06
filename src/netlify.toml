@@ -2,5 +2,5 @@
   from = "/"
   to = "/de/"
   status = 301
-  force = false
+  force = true
   conditions = {Language = ["de"]}
