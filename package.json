@@ -16,6 +16,6 @@
   "devDependencies": {
     "html-bundle": "^6.0.14",
     "serve": "^14.0.1",
-    "sharp": "^0.31.0"
+    "sharp": "^0.31.1"
   }
 }
