@@ -5,7 +5,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "html-bundle --hmr --secure --handler utils/prebuild.js",
+    "start": "html-bundle --hmr --secure --handler utils/prebuild.js",
     "build": "html-bundle --handler utils/prebuild.js",
     "serve": "serve build --ssl-cert localhost.pem --ssl-key localhost-key.pem",
     "preview": "npm run build && npm run serve",
@@ -14,7 +14,7 @@
   "author": "Fabian Krutsch",
   "license": "MIT",
   "devDependencies": {
-    "html-bundle": "^6.0.14",
+    "html-bundle": "^6.0.16",
     "serve": "^14.1.2",
     "sharp": "^0.31.3"
   }
