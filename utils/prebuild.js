@@ -4,7 +4,7 @@ import sharp from "sharp";
 
 const SOURCE_FOLDER = "src";
 const BUILD_FOLDER = "build";
-const file = process.argv[2].replaceAll(sep, "/");
+const file = process.argv[2];
 
 if (
   file === `${SOURCE_FOLDER}/_headers` ||
