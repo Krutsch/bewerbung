@@ -3,3 +3,5 @@ secure
 node_modules
 localhost*.pem
 build
+*.docx
+*.pdf
