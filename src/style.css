@@ -120,7 +120,7 @@ li {
   position: absolute;
   left: -10%;
   top: -10%;
-  background: url(bewerbung.webp) 110% 30%;
+  background: url(bewerbung.webp) 100% 10%;
   background-size: 97%;
   animation: spin 12s linear infinite reverse;
   will-change: transform;
@@ -129,7 +129,7 @@ li {
 /* Safari */
 @media not all and (min-resolution: 0.001dpcm) {
   .bd {
-    background: url(bewerbung.jpg) 110% 30%;
+    background: url(bewerbung.jpg) 100% 10%;
     background-size: 97%;
   }
 }
