@@ -295,6 +295,10 @@ h3 ~ ul {
   box-decoration-break: clone;
 }
 
+.footer i.linkedin + a {
+  margin-left: 2.9em;
+}
+
 .traits-title {
   margin-top: 1em;
 }
