@@ -8,4 +8,4 @@ new IntersectionObserver(
     rootMargin: "50px",
     threshold: 0,
   }
-).observe(document.querySelector("footer"));
+).observe(document.querySelector("footer")!);
