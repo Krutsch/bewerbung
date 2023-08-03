@@ -1,6 +1,4 @@
-import fs from "fs";
-import { sep } from "path";
-import sharp from "sharp";
+import { copyFile, mkdir } from "fs/promises";
 
 const SOURCE_FOLDER = "src";
 const BUILD_FOLDER = "build";
@@ -9,37 +7,20 @@ const file = process.argv[2];
 if (
   file === `${SOURCE_FOLDER}/_headers` ||
   /\.(woff|txt|ico)/.test(file) ||
-  file === `${SOURCE_FOLDER}/netlify.toml`
+  file === `${SOURCE_FOLDER}/netlify.toml` ||
+  file.endsWith(".webp") ||
+  file.endsWith(".avif")
 ) {
-  copyFile(file);
-} else if (file.endsWith(".jpg")) {
-  sharp(file)
-    .jpeg({
-      quality: 80,
-    })
-    .toFile(toBuildFile(file))
-    .catch((err) => {
-      console.error(err);
-    });
-} else if (file.endsWith(".webp")) {
-  sharp(file)
-    .webp({
-      quality: 80,
-    })
-    .toFile(toBuildFile(file))
-    .catch((err) => {
-      console.error(err);
-    });
+  await copyFileWithDir(file);
+  console.log(`finished handling ${file}`);
 }
 
-console.log(`finished handling ${file}`);
-
-function copyFile(file) {
+async function copyFileWithDir(file) {
   const buildFile = toBuildFile(file);
   const dir = buildFile.split("/").slice(0, -1).join("/");
 
-  fs.mkdirSync(dir, { recursive: true });
-  fs.copyFileSync(file, buildFile);
+  await mkdir(dir, { recursive: true });
+  await copyFile(file, buildFile);
 }
 
 function toBuildFile(file) {

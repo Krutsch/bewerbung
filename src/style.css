@@ -120,18 +120,14 @@ li {
   position: absolute;
   left: -10%;
   top: -10%;
-  background: url(bewerbung.webp) 100% 10%;
+  background: image-set(
+      url("bewerbung.avif") type("image/avif"),
+      url("bewerbung.webp") type("image/webp")
+    )
+    100% 10%;
   background-size: 97%;
   animation: spin 12s linear infinite reverse;
   will-change: transform;
-}
-
-/* Safari */
-@media not all and (min-resolution: 0.001dpcm) {
-  .bd {
-    background: url(bewerbung.jpg) 100% 10%;
-    background-size: 97%;
-  }
 }
 
 .name {
