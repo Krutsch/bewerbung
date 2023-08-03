@@ -125,7 +125,7 @@ li {
     url("bewerbung.avif") type("image/avif"),
     url("bewerbung.webp") type("image/webp")
   );
-  background-position: 100 10%;
+  background-position: 100% 17%;
   background-size: 97%;
   animation: spin 12s linear infinite reverse;
   will-change: transform;
