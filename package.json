@@ -14,7 +14,7 @@
   "author": "Fabian Krutsch",
   "license": "MIT",
   "devDependencies": {
-    "html-bundle": "^6.0.20",
+    "html-bundle": "^6.0.21",
     "serve": "^14.2.1"
   }
 }
