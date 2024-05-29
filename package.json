@@ -1,7 +1,7 @@
 {
   "name": "bewerbung",
   "version": "1.0.0",
-  "description": "Fabian Krutsch - Bewerbung",
+  "description": "Fabian Klingenberg - Bewerbung",
   "private": true,
   "type": "module",
   "scripts": {
@@ -11,7 +11,7 @@
     "preview": "npm run build && npm run serve",
     "update": "npx npm-check-updates -u && npm i && npm outdated"
   },
-  "author": "Fabian Krutsch",
+  "author": "Fabian Klingenberg",
   "license": "MIT",
   "devDependencies": {
     "html-bundle": "^6.1.2",

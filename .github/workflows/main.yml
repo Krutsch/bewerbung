@@ -5,7 +5,7 @@ jobs:
   audit:
     runs-on: ubuntu-latest
     steps:
-    - name: Audit Netlify Deploy Preview
-      uses: jakejarvis/lighthouse-action@master
-      with:
-        netlify_site: 'krutsch.netlify.app'
+      - name: Audit Netlify Deploy Preview
+        uses: jakejarvis/lighthouse-action@master
+        with:
+          netlify_site: "klingenberg.netlify.app"
