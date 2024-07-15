@@ -50,7 +50,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: var(--bg);
   transition: transform 0.4s ease;
-  overflow-x: hidden;
+  overflow-x: clip;
   border-radius: 0 0 1em 1em;
 }
 
@@ -256,8 +256,6 @@ h3 ~ ul {
   -moz-font-feature-settings: "liga";
   -moz-osx-font-smoothing: grayscale;
 
-  position: relative;
-  top: 5px;
   padding: 0.3em;
   background: var(--footer-bg-icons);
   border-radius: 50%;
@@ -276,6 +274,9 @@ h3 ~ ul {
 
 .footer p {
   margin: 0.75em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .footer a {
@@ -286,6 +287,8 @@ h3 ~ ul {
   margin-left: 2.7em;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
+  position: relative;
+  top: -3px;
 }
 
 .footer i.linkedin + a {
@@ -336,6 +339,7 @@ h3 ~ ul {
 
   .section {
     display: flex;
+    align-items: start;
   }
 
   .section:before {
@@ -344,6 +348,8 @@ h3 ~ ul {
 
   .section-title {
     flex: 0 0 24%;
+    position: sticky;
+    top: 1rem;
   }
 
   .section-content {
