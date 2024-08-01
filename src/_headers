@@ -3,4 +3,5 @@
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
   Referrer-Policy: strict-origin-when-cross-origin
-  Content-Security-Policy: script-src https: 'self' 'unsafe-inline';
+  Cross-Origin-Resource-Policy: same-origin
+  Content-Security-Policy: script-src https: 'self' 'unsafe-inline'; frame-ancestors 'none'
