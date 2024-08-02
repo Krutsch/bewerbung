@@ -121,10 +121,7 @@ li {
   left: -10%;
   top: -10%;
   background: url("bewerbung.avif");
-  background-image: image-set(
-    url("bewerbung.avif") type("image/avif"),
-    url("bewerbung.webp") type("image/webp")
-  );
+  background-image: url("bewerbung.avif");
   background-position: 100% 17%;
   background-size: 97%;
   animation: spin 12s linear infinite reverse;

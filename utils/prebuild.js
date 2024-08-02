@@ -8,7 +8,6 @@ if (
   file === `${SOURCE_FOLDER}/_headers` ||
   /\.(woff|txt|ico)/.test(file) ||
   file === `${SOURCE_FOLDER}/netlify.toml` ||
-  file.endsWith(".webp") ||
   file.endsWith(".avif")
 ) {
   await copyFileWithDir(file);
