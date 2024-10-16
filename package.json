@@ -15,6 +15,6 @@
   "license": "MIT",
   "devDependencies": {
     "html-bundle": "^6.1.7",
-    "serve": "^14.2.3"
+    "serve": "^14.2.4"
   }
 }
