@@ -50,6 +50,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: var(--bg);
   transition: transform 0.4s ease;
+  will-change: transform;
   overflow-x: clip;
   border-radius: 0 0 1em 1em;
 }
