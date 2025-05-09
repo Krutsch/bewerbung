@@ -1,0 +1,22 @@
+{
+  "version": "5",
+  "specifiers": {
+    "jsr:@hono/hono@^4.7.8": "4.7.8"
+  },
+  "jsr": {
+    "@hono/hono@4.7.8": {
+      "integrity": "620b1eaab065196d4ebe02cff31f8d3a78c94f736ce2ca86ee14f5f26fe48ecd"
+    }
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@hono/hono@^4.7.8"
+    ],
+    "packageJson": {
+      "dependencies": [
+        "npm:html-bundle@^6.1.8",
+        "npm:serve@^14.2.4"
+      ]
+    }
+  }
+}

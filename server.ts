@@ -2,13 +2,9 @@ import { Hono } from "hono";
 import { serveStatic } from "hono/deno";
 import { languageDetector } from "hono/language";
 
-const deFile = await Deno.readTextFile("../bewerbung/build/de/index.html");
+const deFile = await Deno.readTextFile("./build/de/index.html");
 
 const app = new Hono();
-app.use(async (c, next) => {
-  c.req.path = c.req.path.replace("klingenberg.works/", "");
-  await next();
-});
 app.use(
   languageDetector({
     supportedLanguages: ["de", "en"],
@@ -23,6 +19,6 @@ app.use("*", async (c, next) => {
     await next();
   }
 });
-app.use("*", serveStatic({ root: "../bewerbung/build" }));
+app.use("*", serveStatic({ root: "./build" }));
 
 export default app;
