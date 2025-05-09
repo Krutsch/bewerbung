@@ -1,6 +1,6 @@
 {
   "imports": {
-    "hono": "jsr:@hono/hono@^4.7.8"
+    "hono": "jsr:@hono/hono@^4.7.9"
   },
   "tasks": {
     "start": "deno serve --watch --port 3000 --allow-read server.ts",
