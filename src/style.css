@@ -211,6 +211,12 @@ li {
 
 .section-content > h3 {
   font-weight: 600;
+
+  & small {
+    display: block;
+    padding-inline-start: 0.5ch;
+    font-weight: normal;
+  }
 }
 
 .note {
