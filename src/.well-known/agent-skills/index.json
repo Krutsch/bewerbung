@@ -1,0 +1,12 @@
+{
+  "$schema": "https://agentskills.io/schema/index/v0.2.0.json",
+  "skills": [
+    {
+      "name": "hire-fabian",
+      "type": "skill",
+      "description": "How to evaluate and contact Fabian Klingenberg, a Lead Web Engineer, for roles, contracts, or freelance work.",
+      "url": "https://klingenberg.works/.well-known/agent-skills/hire/SKILL.md",
+      "sha256": "d5efb914dd3c8b2f48cb6bcb5d1aa8833bf622bc98ac29460a59144778e20b12"
+    }
+  ]
+}

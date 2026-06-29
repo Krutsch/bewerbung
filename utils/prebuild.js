@@ -4,7 +4,7 @@ const SOURCE_FOLDER = "src";
 const BUILD_FOLDER = "build";
 const file = process.argv[2];
 
-if (/\.(woff|txt|ico|avif|xml)/.test(file)) {
+if (/\.(woff|txt|ico|avif|xml|md|json)/.test(file)) {
   await copyFileWithDir(file);
   console.log(`finished handling ${file}`);
 }
