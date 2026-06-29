@@ -1,15 +1,10 @@
-import { copyFile, mkdir } from "fs/promises";
+import { copyFile, mkdir } from "node:fs/promises";
 
 const SOURCE_FOLDER = "src";
 const BUILD_FOLDER = "build";
 const file = process.argv[2];
 
-if (
-  file === `${SOURCE_FOLDER}/_headers` ||
-  /\.(woff|txt|ico)/.test(file) ||
-  file === `${SOURCE_FOLDER}/netlify.toml` ||
-  file.endsWith(".avif")
-) {
+if (/\.(woff|txt|ico|avif|xml)/.test(file)) {
   await copyFileWithDir(file);
   console.log(`finished handling ${file}`);
 }

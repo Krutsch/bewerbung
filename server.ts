@@ -9,7 +9,7 @@ app.use(
   languageDetector({
     supportedLanguages: ["de", "en"],
     fallbackLanguage: "en",
-  })
+  }),
 );
 app.use("*", async (c, next) => {
   const lang = c.get("language");
