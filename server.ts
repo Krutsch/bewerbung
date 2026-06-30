@@ -23,11 +23,20 @@ app.use("*", async (c, next) => {
   if (c.req.path === "/") {
     c.header("Link", LINK_HEADER);
     if (c.req.header("Accept")?.includes("text/markdown")) {
-      return c.body(lang === "de" ? resumeDe : resumeEn, 200, {
+      const markdown = lang === "de" ? resumeDe : resumeEn;
+      if (!markdown) {
+        return c.text("Resume not available", 503);
+      }
+      return c.body(markdown, 200, {
         "Content-Type": "text/markdown; charset=utf-8",
       });
     }
-    if (lang === "de") return c.html(deFile);
+    if (lang === "de") {
+      if (!deFile) {
+        return c.text("Page not available", 503);
+      }
+      return c.html(deFile);
+    }
   }
   await next();
 });
