@@ -1,9 +1,13 @@
 {
+  "minimumDependencyAge": {
+    "age": "P1D",
+    "exclude": ["npm:hydro-js", "npm:html-bundle"]
+  },
   "imports": {
     "hono": "jsr:@hono/hono@^4.12.27"
   },
   "tasks": {
-    "start": "deno serve --watch --port 3000 --allow-read server.ts",
-    "run": "deno serve --port 3000 --allow-read server.ts"
+    "start": "deno serve --watch --port 3006 --allow-read server.ts",
+    "run": "deno serve --port 3006 --allow-read server.ts"
   }
 }
