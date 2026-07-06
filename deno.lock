@@ -3,7 +3,7 @@
   "specifiers": {
     "jsr:@hono/hono@^4.12.27": "4.12.27",
     "npm:@types/node@*": "22.15.15",
-    "npm:html-bundle@^6.3.0": "6.3.0",
+    "npm:html-bundle@^6.3.1": "6.3.1",
     "npm:serve@^14.2.6": "14.2.6"
   },
   "jsr": {
@@ -253,8 +253,8 @@
     "base64-js@1.5.1": {
       "integrity": "sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA=="
     },
-    "baseline-browser-mapping@2.10.40": {
-      "integrity": "sha512-BSSLZ9/Cjjv7Gtj5B68ZzXcXUg8iOf3fme+FCuh8rC/Go+Kmh8cox7M3A8dolou16s64QjLPOSdngh7GxXvkSw==",
+    "baseline-browser-mapping@2.10.42": {
+      "integrity": "sha512-c/jurFrDLyui7o1J86yLkRu4LMsTYcBohveus7/I2Hzdn9KIP2bdJPTue/lR1KH46enoPbD77GKeSYNdyPoD3Q==",
       "bin": true
     },
     "beasties@0.4.2": {
@@ -650,8 +650,8 @@
     "ee-first@1.1.1": {
       "integrity": "sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow=="
     },
-    "electron-to-chromium@1.5.384": {
-      "integrity": "sha512-g6KAKY1vkYsADvSPWvdJsuYT0ixdcu6lUtD9P/wJKGBEDlZVXh2AX42j1mPqqaQPDluWjara9ziQ7xqAeXCt5A=="
+    "electron-to-chromium@1.5.387": {
+      "integrity": "sha512-TaxwufTFDufvPEoXdhwVrA3UdFWBeWGkYoJ1K8ldF1xe6gKfth6iRNS5lTQ5JPNOHdGQm8PT1QYKUqFLCiUefQ=="
     },
     "emoji-regex@8.0.0": {
       "integrity": "sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A=="
@@ -846,8 +846,8 @@
         "function-bind"
       ]
     },
-    "html-bundle@6.3.0": {
-      "integrity": "sha512-+fvinmBfJVXvTV9L7LSECnywSWGowJF52hZHe5O10t+0CVpItQgLUCzRH3+34HmjJZ8mlcQLyAYFzvscJ9p7AQ==",
+    "html-bundle@6.3.1": {
+      "integrity": "sha512-oEIQIWas/MU3hgnHVi/7iW9N2hfjNg+DfAj/fNmXjPEiqReWG2yftk1BR86WWHwgy97mFAqG9XlvbF///ddFZA==",
       "dependencies": [
         "@web/parse5-utils",
         "await-spawn",
@@ -903,8 +903,8 @@
     "hydro-js@1.9.0": {
       "integrity": "sha512-Q5f0sD6Zc/Psn6SbStSJ9jwPJ81kEUZILqrpuz+7vDfqEtiYplFdP0wW8bJOBQv/pXz+AuerHU5KLCfWnN9iwQ=="
     },
-    "iconv-lite@0.7.2": {
-      "integrity": "sha512-im9DjEDQ55s9fL4EYzOAv0yMqmMBSZp6G0VvFyTMPKWxiSBHUj9NW/qqLmXUwXrrM7AvqSlTCfvqRb0cM8yYqw==",
+    "iconv-lite@0.7.3": {
+      "integrity": "sha512-IKXpvIzjnC9XTAUbVBcMfGS0EPaIXtW6v+zr+RRp+hqULEpo0owZax6wyRwPOJbWbzjYspQwusTsfVr0ifh4uQ==",
       "dependencies": [
         "safer-buffer"
       ]
@@ -1732,7 +1732,7 @@
     ],
     "packageJson": {
       "dependencies": [
-        "npm:html-bundle@^6.3.0",
+        "npm:html-bundle@^6.3.1",
         "npm:serve@^14.2.6"
       ]
     }
