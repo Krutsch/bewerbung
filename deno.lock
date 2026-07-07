@@ -3,7 +3,7 @@
   "specifiers": {
     "jsr:@hono/hono@^4.12.27": "4.12.27",
     "npm:@types/node@*": "22.15.15",
-    "npm:html-bundle@^6.3.1": "6.3.1",
+    "npm:html-bundle@^6.4.1": "6.4.1",
     "npm:serve@^14.2.6": "14.2.6"
   },
   "jsr": {
@@ -380,8 +380,8 @@
         "caniuse-lite"
       ]
     },
-    "caniuse-lite@1.0.30001800": {
-      "integrity": "sha512-MMHtuAz9Ys840zAY5F4k6fV5GaivZ9sPk+nz0mY+GYVzRBnYkN0mpqkSR92oWRQ19yQWo4HvBV/FnC16AJX8MA=="
+    "caniuse-lite@1.0.30001802": {
+      "integrity": "sha512-vmv8ub2xwTNmljSKf82mtCk5JH7hC+YgzLj3P5zotvA0tPQ9016tdNNOG8WRca1IxOnhSsivB+J0z5FeE5LOUw=="
     },
     "chalk-template@0.4.0": {
       "integrity": "sha512-/ghrgmhfY8RaSdeo43hNXxpoHAtxdbskUHjPpfqUWGttFgycUhYPGx3YZBCnUCvOa7Doivn1IZec3DEGFoMgLg==",
@@ -846,8 +846,8 @@
         "function-bind"
       ]
     },
-    "html-bundle@6.3.1": {
-      "integrity": "sha512-oEIQIWas/MU3hgnHVi/7iW9N2hfjNg+DfAj/fNmXjPEiqReWG2yftk1BR86WWHwgy97mFAqG9XlvbF///ddFZA==",
+    "html-bundle@6.4.1": {
+      "integrity": "sha512-rAi6Og/Z/IZOy1vVGHwvB/bI5DTbctO6JDq7An67MTWX0Rm3ZNvIM1O1r7v/P4sFtuPdmj6O1/WB7KqbYZgw7w==",
       "dependencies": [
         "@web/parse5-utils",
         "await-spawn",
@@ -859,6 +859,7 @@
         "glob",
         "html-minifier-terser",
         "hydro-js",
+        "jiti",
         "parse5@8.0.1",
         "postcss",
         "postcss-load-config"
@@ -945,6 +946,10 @@
     },
     "isexe@2.0.0": {
       "integrity": "sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw=="
+    },
+    "jiti@2.7.0": {
+      "integrity": "sha512-AC/7JofJvZGrrneWNaEnJeOLUx+JlGt7tNa0wZiRPT4MY1wmfKjt2+6O2p2uz2+skll8OZZmJMNqeke7kKbNgQ==",
+      "bin": true
     },
     "json-schema-traverse@1.0.0": {
       "integrity": "sha512-NM8/P9n3XjXhIZn1lLhkFaACTOURQXjWhV4BA/RnOv8xvgqtqpAX9IO4mRQxSx1Rlo4tqzeqb0sOlruaOy3dug=="
@@ -1179,13 +1184,15 @@
         "postcss"
       ]
     },
-    "postcss-load-config@6.0.1_postcss@8.5.16": {
+    "postcss-load-config@6.0.1_jiti@2.7.0_postcss@8.5.16": {
       "integrity": "sha512-oPtTM4oerL+UXmx+93ytZVN82RrlY/wPUV8IeDxFrzIjXOLF1pN+EmKPLbubvKHT2HC20xXsCAH2Z+CKV6Oz/g==",
       "dependencies": [
+        "jiti",
         "lilconfig",
         "postcss"
       ],
       "optionalPeers": [
+        "jiti",
         "postcss"
       ]
     },
@@ -1732,7 +1739,7 @@
     ],
     "packageJson": {
       "dependencies": [
-        "npm:html-bundle@^6.3.1",
+        "npm:html-bundle@^6.4.1",
         "npm:serve@^14.2.6"
       ]
     }
