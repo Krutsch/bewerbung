@@ -3,7 +3,6 @@
   "specifiers": {
     "jsr:@hono/hono@^4.12.27": "4.12.27",
     "npm:@types/node@*": "22.15.15",
-    "npm:html-bundle@^6.5.1": "6.5.1",
     "npm:serve@^14.2.6": "14.2.6"
   },
   "jsr": {
@@ -1753,7 +1752,7 @@
     ],
     "packageJson": {
       "dependencies": [
-        "npm:html-bundle@^6.5.1",
+        "npm:html-bundle@^6.6.4",
         "npm:serve@^14.2.6"
       ]
     }
