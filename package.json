@@ -14,7 +14,7 @@
   "author": "Fabian Klingenberg",
   "license": "MIT",
   "devDependencies": {
-    "html-bundle": "^6.6.5",
+    "html-bundle": "^6.7.0",
     "serve": "^14.2.6"
   },
   "allowScripts": {
