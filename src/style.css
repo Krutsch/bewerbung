@@ -138,9 +138,9 @@ li {
   position: absolute;
   inset-inline-start: -10%;
   inset-block-start: -10%;
-  background: url("bewerbung.avif");
-  background-image: url("bewerbung.avif");
-  background-position: 100% 17%;
+  background: url("bewerbung.webp");
+  background-image: url("bewerbung.webp");
+  background-position: 100% 175%;
   background-size: 97%;
   animation: spin 12s linear infinite reverse;
   will-change: transform;

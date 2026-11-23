@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "html-bundle --hmr --secure --handler utils/prebuild.js",
-    "build": "html-bundle --handler utils/prebuild.js && cp -r src/.well-known build/",
+    "build": "html-bundle && cp -r src/.well-known build/",
     "serve": "serve build --ssl-cert localhost.pem --ssl-key localhost-key.pem",
     "preview": "npm run build && npm run serve"
   },
@@ -14,6 +14,7 @@
   "license": "MIT",
   "devDependencies": {
     "html-bundle": "^6.7.0",
+    "hydro-js": "^1.10.3",
     "serve": "^14.2.8"
   },
   "allowScripts": {
