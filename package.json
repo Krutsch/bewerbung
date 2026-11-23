@@ -14,7 +14,7 @@
   "license": "MIT",
   "devDependencies": {
     "html-bundle": "^6.7.0",
-    "serve": "^14.2.7"
+    "serve": "^14.2.8"
   },
   "allowScripts": {
     "esbuild": true
